@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<title>文档标题</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="libs/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/otto.css">
+	<link rel="stylesheet" href="css/index.css">
+	<style type="text/css">
+		/* @media  screen and (max-width:760px) {
+	p: {background: #fff;height: 100px;}
+		} */
+	</style>
+</head>
+
+<body>
+	<section id="top">
+		<div class="layout">
+			<a class="top-l" href=""><img src="images/logo.png"></a>
+			<div class="top-c">
+				<input type="text" name="search">
+				<button><i class="fa fa-search"></i></button>
+			</div>
+			<div class="top-r">
+				<ul>
+					<li>
+						<a href="">
+							<i class="fa fa-user-circle-o fa-lg"></i>
+							<p>个人信息</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-shopping-cart fa-lg"><s class="carnum">1</s></i>
+							<p>购物车</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="userinfo" class="layout">
+		<div class="logged">
+			<span>欢迎您！</span>
+			<p id="username"></p>
+			<button id="logout">注销</button>
+		</div>
+		<div class="nolog">
+			<span>还没登录？</span>
+			<button id="login">登录</button>
+		</div>
+	</section>
+	<nav class="layout">
+		<ul class="nav">
+			<li>
+				<a href="">主题市场</a>
+			</li>
+			<li>
+				<a href="">test1</a>
+			</li>
+			<li>
+				<a href="">test2</a>
+			</li>
+			<li>
+				<a href="">test3</a>
+			</li>
+		</ul>
+		<div class="subnav">
+
+			<div class="subnav-l">
+				<ul>
+					<li><a href="">男装</a><span>/</span><a href="">女装</a><span>/</span><a href="">童装</a></li>
+					<li><a href="">男装</a><span>/</span><a href="">女装</a><span>/</span><a href="">童装</a></li>
+					<li><a href="">男装</a><span>/</span><a href="">女装</a><span>/</span><a href="">童装</a></li>
+				</ul>
+			</div>
+			<div class="subnav-r">
+				<div class="hot">
+					<a href=""><img class="hot-img" src="images/samsung_hot.jpg"></a>
+				</div>
+				<div class="list">
+					<div>
+						<h2>男装</h2>
+						<ul>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+						</ul>
+					</div>
+					<div>
+						<h2>女装</h2>
+						<ul>
+							<li><a href="">品牌</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+						</ul>
+					</div>
+					<div>
+						<h2>童装</h2>
+						<ul>
+							<li><a href="">品牌</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list">
+					<div>
+						<h2>男装2</h2>
+						<ul>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+
+						</ul>
+					</div>
+					<div>
+						<h2>女装2</h2>
+						<ul>
+							<li><a href="">品牌</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+
+						</ul>
+					</div>
+					<div>
+						<h2>童装2</h2>
+						<ul>
+							<li><a href="">品牌</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list">
+					<div>
+						<h2>男装3</h2>
+						<ul>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+						</ul>
+					</div>
+					<div>
+						<h2>唉唉</h2>
+						<ul>
+							<li><a href="">品牌</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+						</ul>
+					</div>
+					<div>
+						<h2>童装33</h2>
+						<ul>
+							<li><a href="">品牌</a></li>
+							<li><a href="">品牌2</a></li>
+							<li><a href="">品牌1</a></li>
+							<li><a href="">品牌2</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<section id="banner" class="layout">
+		<div class="imgbox">
+			<a><img src="https://img.zcool.cn/community/018bec5c3d3e40a80121fbb01354a4.jpg@1380w" alt=""></a>
+			<a><img src="https://img.zcool.cn/community/01e9555c3d3e8ba8012090dbe7f2a9.jpg@1380w" alt=""></a>
+			<a><img src="https://img.zcool.cn/community/0124ea5c3d7be7a80121fbb05896c3.png@1380w" alt=""></a>
+			<a><img src="https://img.zcool.cn/community/01c5bb5c3d7c5ba8012090db91bcaa.png@1380w" alt=""></a>
+		</div>
+		<div class="btn">
+			<span id="left">&lt;</span>
+			<span id="right">&gt;</span>
+<!-- 			<input type="button" id="left" value="<">
+			<input type="button" id="right" value=">"> -->
+		</div>
+	</section>
+
+	<section id="ads" class="layout">
+		<h3>猜你喜欢</h3>
+<div class="contain">
+	
+	<ul>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">三星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$299</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">华为</p>
+				<p class="description" title="124324">samsung Galaxy s10 盖世兔</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">rua</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">四星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">五星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">六星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">七星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">八星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">九星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十一星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十二星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$2599</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十三星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$6666</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十四星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$6666</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十五星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$6666</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十六星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$6666</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十七星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$6666</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十八星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$6666</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">十九星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$6666</span>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="images/samsung.png">
+				<p class="brand">二十星</p>
+				<p class="description" title="124324">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</p>
+				<s>原价￥3999</s>
+				<span>$6666</span>
+			</a>
+		</li>
+	</ul>
+	<div class="ads-btn">
+			<span id="ads-left-btn">&lt;</span>
+			<span id="ads-right-btn">&gt;</span>
+	</div>
+</div>
+		
+	</section>
+	<section id="family-home" class="layout">
+		<h3>家居生活</h3>
+		<div class="contain">
+			<ul>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤架1</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤架2</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤架3</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤4</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤5</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤6</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤7</p>
+					</a>
+				</li>
+			</ul>
+			<div class="btn">
+				<span id="family-left-btn">&lt;</span>
+				<span id="family-right-btn">&gt;</span>
+			</div>
+		</div>
+	</section>
+	<section id="fashion" class="layout">
+		<h3>潮流时尚</h3>
+		<div class="contain">
+			<ul>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤架1</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤架2</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤架3</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤4</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤5</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤6</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="out-box">
+							<div class="inner-box">
+								<img src="images/family-home.jpg">
+							</div>
+						</div>
+						<p>烧烤7</p>
+					</a>
+				</li>
+			</ul>
+			<div class="btn">
+				<span id="fashion-left-btn">&lt;</span>
+				<span id="fashion-right-btn">&gt;</span>
+			</div>
+		</div>
+	</section>
+	<section id="activity" class="layout">
+		<h3>当月活动</h3>
+		<ul>
+			<li>
+				<a href=""><img src="https://i.otto.de/i/otto/001_2018_23_kamp_up_heimat_vorlogin_flexpage_uni50_1?$uni50_responsive$">
+					<h4>母亲节到了</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quo, sam nam ipsum consequatur aliquid quam corporis.</p>
+				</a>
+			</li>
+			<li>
+				<a href=""><img src="https://i.otto.de/i/otto/001_2018_23_kamp_up_heimat_vorlogin_flexpage_uni50_1?$uni50_responsive$">
+					<h4>嘻嘻嘻嘻嘻嘻嘻</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, numquam, recusandae!</p>
+				</a>
+			</li>
+			<li>
+				<a href=""><img src="https://i.otto.de/i/otto/001_2018_23_kamp_up_heimat_vorlogin_flexpage_uni50_1?$uni50_responsive$">
+					<h4>嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodcia deserunt mollit anim id est laborum.</p>
+				</a>
+			</li>
+			<li>
+				<a href=""><img src="https://i.otto.de/i/otto/001_2018_23_kamp_up_heimat_vorlogin_flexpage_uni50_1?$uni50_responsive$">
+					<h4>嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻寻寻寻寻寻</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ab!</p>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section id="introduce" class="layout">
+		<p class="bigtitle">在otto发现</p>
+		<p class="smalltitle">在任何情况下都可靠的合作商</p>
+		<p class="content"><b>发现于otto.de ...</b>在其他的愿望和需求寿命计数每一个阶段，我们很高兴能与我们广泛的产品创新和流行趋势在我们的网上商店，以满足您：初始为宝宝，最新的流行趋势或设立一个美丽的家园。我们不仅希望为您提供适当的分类，还可以在您需要灵感时随时为您提供帮助。让自己受宠若惊，例如，提供个人建议，送货上门以及装配和连接服务，为您最喜爱的作品。</p>
+		<p class="section">各种各样的产品，全天候提供简单的建议......</p>
+		<p class="content">我们不仅要挑选大约5,000个品牌，还要拥有数十年的经验。<b>感谢我们的在线指南</b>以及生活方式和时尚博客的<b>全方位咨询</b>，您将始终找到终身的邪教项目。20年来，otto.de一直是舒适网购的理由。充分利用我们的个性化和专业咨询服务，让您从我们的产品系列中获得灵感。当然，您也可以随时通过社交网络与我们联系 - 我们每月处理多达10,000个请求，每个请求的平均服务速度为10分钟。如需进一步的灵感，您还可以随时免费订购最新的OTTO目录 以及我们多样化的目录世界订单的其他优惠。</p>
+		<p class="section">...为您提供独家服务优势！</p>
+		<p class="content">你选择了新的宠儿？只需将它送到您的家中舒适 - 您甚至可以选择您的首选日期，以便立即获得货物！由于我们<b>全方位的无忧服务</b>，您还可以通过分期付款选项（最多48个月分期付款）满足您的愿望，同时结合100天的付款时间。如果您决定我们的交付和组装服务，您也不必担心您的旧设备：当然，我们会在安装后交付新设备时随身携带并专业处理。</p>
+		<p class="section">BeGOOD：一种有责任感的生活方式</p>
+		<p class="content">因为环境对我们非常重要。因此，我们不仅将资源的负责任使用归功于我们的企业价值观，而且我们还提供<b>可持续的产品</b>，您将在我们的GOOD产品标签上初步认识到这些产品。您还可以在我们的博客上遵循我们对更好环境的承诺！</p>
+		<p class="title">时尚：你的衣服是你的名片</p>
+		<p class="content">时尚不仅仅是服装。<b>它表达了你的个性和你对生活的个人态度</b>。精心定制的场合，您的衣橱将让您坚持每一块镶木地板，无论是在您最好的朋友的婚礼上的鸡尾酒礼服时尚，还是在花园派对的女性夏季礼服中引人注目。通过我们的时尚建议探索您的个人风格，成为个性化服装的潮流引领者！精致的剪裁强调您的身材的好处，时尚的服装表征您的风格，功能材料防风和天气 - 积极和充实的生活。</p>
+		<p class="title">家具：为您感觉良好的家庭提供灵感和服务</p>
+		<p class="content"><b>家是个人发展最重要的地方</b>。在这里你可以休息，而宽阔的世界只是呆在外面。您的装饰反映了您的价值观和您的个人品味。奥托，你可以设计自己的四面墙你的心脏的内容，而不必担心大型家具的运输，使：我们提供您的新喜欢的物品进入你的家，并建立了大量的家具，从餐具到沙发床，也喜欢你。为了营造健康的生活环境和良好的环境意识，我们还提供各种可持续生产的家具，并获得了我们的GOOD产品标签。这使得OTTO成为您可靠的合作伙伴，通过分期付款选项，还可以加强您的生活空间融资。</p>
+		<p class="title">技术：让您的生活更轻松的一切</p>
+		<p class="content">您可以通过现代化的多媒体设备等待您的所有感官，为您提供娱乐和通信的全新体验。不要让自己细雨是座右铭，而是体验并沉浸在行动中的所有感官中！4K电视，投影仪和蓝光播放器等高端技术设备将您的起居室变成音乐厅，家庭影院或与Playstation 4相结合进入游戏场地。无论您想放松身心还是让肾上腺素畅通 - 我们丰富的多媒体选择将激发您享受所有感官享受的自由时光。这样您就可以在订购新的高端设备后开始使用，而不再需要担心长期保修。<b>好莱坞的伟人和声乐摇滚明星在你的客厅里谋生</b>，甚至不用触摸手指。</p>
+	</section>
+
+	<section id="info" class="layout">
+		<div>
+			<span>
+				<i class="fa fa-user"></i>
+				<div>
+					<a href="">个人信息</a>
+					<a href="">注册</a>
+				</div>
+			</span>
+		</div>
+		<div>
+			<span>
+				<i class="fa fa-gift" aria-hidden="true"></i>
+				<a href="">礼品卡</a>
+			</span>
+			<span>
+				<i class="fa fa-list-alt" aria-hidden="true"></i>
+				<a href="">在线订单</a>
+			</span>
+		</div>
+		<div>
+			<span>
+				<i class="fa fa-bookmark-o" aria-hidden="true"></i>
+				<a href="">目录</a>
+			</span>
+			<span>
+				<i class="fa fa-comments-o" aria-hidden="true"></i>
+				<a href="">帮助论坛</a>
+			</span>
+		</div>
+		<div>
+			<img src="images/info.png">
+		</div>
+	</section>
+	<section id="service" class="layout">
+		<div>
+			<ul>
+				<li class="title"><i class="fa fa-info" aria-hidden="true"></i>服务</li>
+				<li>
+					<span>遇到问题了吗</span>
+					<p class="normal">8008-8208-82</p>
+					<p class="small">固定电话0.2元/分钟</p>
+					<p class="small">移动最大0.4元/分钟</p>
+				</li>
+				<li>
+					<a href="">售后服务</a>
+				</li>
+				<li>
+					<a href="mailto:service@otto.de">service@otto.de</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li class="title">付款</li>
+				<li><a href=""><i class="fa fa-paypal" aria-hidden="true"></i>paypal</a></li>
+				<li><a href=""><i class="fa fa-cc-visa" aria-hidden="true"></i>visa</a></li>
+				<li><a href=""><i class="fa fa-google-wallet" aria-hidden="true"></i>google wallet</a></li>
+				<li><a href=""><i class="fa fa-credit-card" aria-hidden="true"></i>信用卡</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li class="title"><a href="">关于我们</a></li>
+				<li><a href="">可持续性</a></li>
+				<li><a href="">公司</a></li>
+				<li><a href="">编辑部</a></li>
+				<li><a href="">工作环境</a></li>
+				<li><a href="">隐私政策</a></li>
+				<li><a href="">版本说明</a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="purport">
+		<div class="layout">
+			<div>
+				<i class="fa fa-check" aria-hidden="true"></i>
+				<a href="">安全购买</a>
+			</div>
+			<div>
+				<i class="fa fa-check" aria-hidden="true"></i>
+				<a href="">分期付款</a>
+			</div>
+			<div>
+				<i class="fa fa-check" aria-hidden="true"></i>
+				<a href="">30天退货政策</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="layout">
+			<section class="media">
+				<a href=""><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-weixin" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-weibo" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-google" aria-hidden="true"></i></a>
+			</section>
+			<section class="msg">
+				<p>价格含增值税。增值税，加上服务和运费</p>
+				<p>*提供信贷，需支付额外费用</p>
+			</section>
+			<section class="foot-img">
+				<img src="images/footer.png">
+			</section>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="libs/jquery.js"></script>
+<script type="text/javascript" src="js/banner1.0.0.js"></script>
+<script type="text/javascript" src="js/slowdown.js"></script>
+<script type="text/javascript" src="js/AJAX.js"></script>
+<script type="text/javascript" src="js/cookie.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</html>

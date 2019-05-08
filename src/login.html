@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/otto.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <section id="input_header"></section>
+    <section id="login_input" class="layout">
+        <div class="error">
+        <b>错误信息:</b> 账户不存在或密码错误
+        </div>
+        <h4>登录</h4>
+        <div>
+            <ul>
+                <li><p class="left">登录名</p><input id="name" class="right" type="text"></li>
+                <li><p class="left">密码</p><input id="pwd" class="right" type="password"></li>
+                <li><label class="right" for="remember">7天免登陆<input id="remember" type="checkbox"></label></li>
+                <li><a class="right" href="">忘记密码？</a></li>
+                <li><a class="right" href="">登录遇到困难？</a></li>
+                <li><button class="right login">登录</button></li>
+                <li><button class="right register">现在注册</button></li>
+            </ul>
+        </div>
+    </section>
+    <section id="input_footer"></section>
+</body>
+<script src="libs/require.js" data-main="js/login"></script>
+</html>

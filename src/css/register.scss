@@ -1,0 +1,42 @@
+@function pTr($px) {
+    @return ($px/192)*1rem;
+}
+
+#register_input {
+    .error {background: #f24e63;text-align: center;display: none ;line-height: pTr(60);height: pTr(60);margin: pTr(35) 0;color: #fff;b{font-weight: bold;}}   
+    padding-top:pTr(40);
+    border: {
+        top:pTr(1) solid #222;
+    }
+    font-size: pTr(24);
+    h4 {color: #777;text-align: center;}
+    div {
+        margin-top: pTr(50);
+    
+    ul {
+        width: pTr(520);
+        margin: 0 auto;
+        li {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.1rem;
+            .left {flex:0 0 pTr(120);color: #777;}
+            .right {flex:1;margin-left: pTr(120);}
+            input[type=text],input[type=password] {height: pTr(38);border-radius: 0.03rem;border:0.005rem solid #777}
+            input[type=checkbox],input[type=radio] {width: pTr(20);height: pTr(20);}
+            input.right {margin:0;}
+            a {font-size: pTr(16);}
+            .sex {display: flex;justify-content: space-around;align-items: center;margin: 0;}
+            a:hover {color:#d4021d;text-decoration: underline;}
+            label {font-size: pTr(20);display: flex;align-items: center;}
+            button {@extend input[type=text];height: pTr(50);cursor: pointer;}
+            button.register {background: #d4021d;color: #fff;border: 0;}
+            button.disabled {cursor: not-allowed;background: #c4c4c4;color: #e6e6e6;}
+            
+        }
+    }
+    }
+    
+} 

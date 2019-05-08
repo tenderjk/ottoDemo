@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/otto.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<section id="input_header"></section>
+<section id="register_input" class="layout">
+        <div class="error">
+        <b>错误信息:</b><span>账户不存在或密码错误</span>
+        </div>
+        <h4>注册</h4>
+        <div>
+            <ul>
+                <li><p class="left">登录名</p><input id="name" class="right" type="text"></li>
+                <li><p class="left">昵称</p><input id="nickname" class="right" type="text"></li>
+                <li><p class="left">邮箱地址</p><input id="email" class="right" type="text"></li>
+                <li><p class="left">密码</p><input id="pwd" class="right" type="password"></li>
+                <li><p class="left">确认密码</p><input id="ensurepwd" class="right" type="password"></li>
+                <li>
+                    <p class="left">性别</p>
+                    <div class="right sex">
+                        <label  for="male">男<input id="male" name="sex" type="radio" checked></label>
+                        <label  for="female">女<input id="female" name="sex" type="radio"></label>
+                    </div>  
+                </li>
+                <li><label class="right" for="agree">我同意<a href="">用户协议</a><input id="agree"  type="checkbox"></label></li>
+                <li><button class="right register disabled">现在注册</button></li>
+            </ul>
+        </div>
+</section>
+<section id="input_footer"></section>
+</body>
+<script type="text/javascript" src="libs/require.js" data-main="js/register"></script>
+</html>
