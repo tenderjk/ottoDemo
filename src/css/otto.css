@@ -10,8 +10,8 @@ html {font-size: 192px;}
 #top .top-c button i {color: #fff;font-size: 0.12rem;}
 #top .top-r ul {display: flex;text-align: center;}
 #top .top-r ul li {width: 0.5rem;display: flex;flex-direction: column;margin-right: 0.1rem}
-#top .top-r ul li a {text-decoration: none;}
-#top .top-r ul li a s {border-radius: 50%;height: 0.104rem;width: 0.104rem;background:#c8251c;position: absolute;bottom: 0;right: -0.08rem;font-size: 0.05rem;color: #fff;text-decoration: none}
+#top .top-r ul li a {text-decoration: none;color: #777;cursor: pointer;}
+#top .top-r ul li a s {border-radius: 50%;height: 0.12rem;width: 0.12rem;background:#c8251c;position: absolute;bottom: 0;right: -0.08rem;font-size: 0.05rem;color: #fff;text-decoration: none}
 #top .top-r ul li i {width: 0.125rem;height: 0.104rem;margin-bottom: 0.041rem;position: relative;}
 #top .top-r ul li p {}
 a:visited {color: #777;}

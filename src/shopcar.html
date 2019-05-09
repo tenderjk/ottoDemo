@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/otto.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/shopcar.css">
+    
+</head>
+<body>
+    <section id="input_header"></section>
+    <section id="step" class="layout">
+        <div class="step-l">
+            <ul>
+                <li><span>1</span>我的购物车</li>
+                <li><span>2</span>登录</li>
+                <li><span>3</span>检查并提交</li>
+                <li><span>4</span>谢谢!</li>
+            </ul>
+        </div>
+        <div class="step-r">
+            <button>结账</button>
+        </div>
+    </section>    
+    <section id="shopcar-title" class="layout">
+        在线订单
+    </section>
+
+    <section id="shopcar-list" class="layout">
+        <dl>
+            <!-- <dt>
+                <p>OTTO</p>
+                <span class="num">数量</span>
+                <span class="price">总价</span>
+                <span class="delete">删除</span>
+            </dt> -->
+            <!-- <dd>
+                <div class="imgContain">
+                    <img class="thumbnail" src="images/10-thumbnail.jpg" alt="">
+                    <span class="name">COLLON AB1</span>
+                </div>
+                <div class="numContain">
+                    <input class="num" type="number"min="1" max="50">
+                </div>
+                <p class="price">1200</p>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </dd> -->
+            <dt class="nothing">
+                <h4>未挑选商品，<a href="datalist.html">去看看?</a></h4>
+            </dt>
+        </dl>
+    </section>
+
+    <section id="totalprice" class="layout">
+        <div>
+            <h4>总价格</h4>
+            <div class="count">
+                <span>总计</span>
+                <p id="allprice">0</p>
+            </div>
+            <div class="confirm">
+                请确认无误
+            </div>
+        </div>
+
+    </section>
+
+    <section id="pay" class="layout">
+        <a href="index.html">返回主页</a>
+        <a href="">结账</a>
+    </section>
+    <section id="input_footer"></section>
+</body>
+<script type="text/javascript" src="libs/require.js" data-main="js/shopcar"></script>
+</html>

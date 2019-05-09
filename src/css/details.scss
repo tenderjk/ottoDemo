@@ -1,0 +1,111 @@
+@function pTr($px) {
+    @return ($px/192)*1rem;
+}
+main {
+    display: none;
+    .main-l {
+        flex:0 0 pTr(720);
+        padding-right: pTr(30);
+        position: relative;
+        .oriImg {
+            
+            position: relative;
+            img {width: pTr(720);height: pTr(420);display: block;};
+            span {position: absolute;background: rgba(0, 0, 0, 0.4);width:pTr(240);height:pTr(140);left: 0;top: 0;visibility: hidden; }
+            .layer {position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;}
+        }
+        .bigImg {
+            width: pTr(600);
+            height: pTr(350);
+            overflow: hidden;
+            position: absolute;
+            left: pTr(750);
+            top: 0;
+            visibility: hidden;
+            img {display: block;width: pTr(1800);left: 0;top: 0;
+                height: pTr(1050);position: absolute;}
+        }
+        .name {
+            font-size: pTr(18);
+            padding: pTr(10);
+            color: #777;
+            text-align: center;
+        }
+        
+    }
+    .main-r {
+        flex: 1;
+        font-size: pTr(20);
+        background: #e6e6e6;
+        ul {
+
+            li {
+                padding:pTr(20);
+            }
+            .sale {
+                s {color: #000;margin-right:pTr(5) }
+                span {background: #d4021d;font-weight: bold;color: #fff;padding: pTr(2) pTr(5);border-radius: pTr(5)}
+            }
+            .price {font-size: pTr(26);color:#d4021d;font-weight: bold;
+                i {margin-right: pTr(10);}
+             }
+            .other {
+                font-size: pTr(18);color: #777;
+                a {color: #777;margin-left: pTr(5);}
+                a:hover {text-decoration: underline;color:#999;}
+            }
+
+            .stages {
+                i {margin-right: pTr(5);}
+                span {color: #222;font-weight: bold;}
+            }
+
+            #addCar {
+                height: pTr(50);
+                background: #d4021d;
+                display: block;
+                width: 100%;
+                border: 0;
+                color: #fff;
+                border-radius: pTr(6);
+                cursor: pointer;
+                i {margin-right: pTr(10);}
+            }
+            
+
+            .like {
+                button {
+                    @extend #addCar;
+                    background: #f6f6f6;
+                    border: pTr(1) solid #c4c4c4;
+                    color: #333;
+                    i {color: #d4021d}
+                }
+
+                padding-bottom: pTr(50);
+            }
+        }
+    }
+}
+
+.wrangMsg {
+    font-size: pTr(20);
+    height: pTr(250);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    a {color: #d4021d}
+}
+
+.return {
+
+    font-size: pTr(20);
+    button {
+        padding: pTr(30) 0;
+        border: 0;
+        background: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+}

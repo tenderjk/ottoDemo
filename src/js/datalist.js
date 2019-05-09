@@ -72,7 +72,7 @@ require(["jquery","ajax","cookie","init"],function($,_,_,init) {
                             str+=`<li data-id=${res[i].id}>
                                     <div><img src="${res[i].thumbnailUrl}" alt=""></div>                        
                                     <p class="title">${res[i].name}</p>
-                                    <a href="details.html?id=${res[i].id}"><p class="description">${res[i].description}</p></a> 
+                                    <a href="details.html?id=${res[i].id}"><p title="${res[i].description}" class="description">${res[i].description}</p></a> 
                                     <p class="price"><s>${res[i].oriPrice}</s><span>${res[i].price}</span></p>
                                     <i>%</i>
                                     </li>`
@@ -81,7 +81,7 @@ require(["jquery","ajax","cookie","init"],function($,_,_,init) {
                             str+=`<li data-id=${res[i].id}>
                                     <div><img src="${res[i].thumbnailUrl}" alt=""></div>                        
                                     <p class="title">${res[i].name}</p>
-                                    <a href="details.html?id=${res[i].id}"><p class="description">${res[i].description}</p></a> 
+                                    <a href="details.html?id=${res[i].id}"><p title="${res[i].description}" class="description">${res[i].description}</p></a> 
                                     <p class="price"><span>${res[i].price}</span></p>
                                     </li>`
                         }
