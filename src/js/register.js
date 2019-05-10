@@ -6,26 +6,24 @@ require.config({
 
         "jquery": "../libs/jquery",
         "ajax": "AJAX",
-        "cookie": "cookie",
         "init":"init"
     }
 
 });
 
 
-require(["jquery","ajax","cookie","init"], function ($,_,_,init) {
+require(["jquery","ajax","init"], function ($,_,init) {
     let fontSize=parseInt(document.documentElement.offsetWidth/10);
     document.documentElement.style.fontSize=fontSize+"px";
     //模块加载完成后执行
     $("#input_header").load("model.html #sametop",(response,status,xhr)=>{
         if(status=="success") {
-            $("#input_footer").load("model.html #samefooter",(response,status,xhr)=>{
-                if(status=="success") {
-                    new init.ShowUnserInfo();
-                }
-            });
+            new init.ShowUnserInfo();
+            
         }
     });
+    
+    $("#input_footer").load("model.html #samefooter");
     
     class Check{
         constructor() {

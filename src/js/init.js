@@ -1,4 +1,6 @@
-define(function() {
+define([
+    'cookie'
+],function() {
     class ShowUnserInfo {
     constructor() {
         this.username=getCookie("user");
@@ -7,6 +9,8 @@ define(function() {
         this.nolog=document.querySelector(".nolog");
         this.carnum=document.querySelector(".carnum");
         this.shopcarBtn=document.getElementById("shopcar");
+        this.search=document.getElementById("search");
+        this.searchList=document.getElementById("searchList");
         this.init();
         
     }
@@ -34,6 +38,7 @@ define(function() {
         this.count();
     }
     bindEve() {
+        let that=this;
         this.shopcarBtn.onclick=function() {
             if(!getCookie("user")) {
                 window.location.href="login.html";
@@ -42,6 +47,26 @@ define(function() {
                 window.location.href="shopcar.html";
             }
         }
+
+        this.search.oninput=function() {
+            // if(this.value!="") {
+                let str="";
+                that.searchList.innerHTML="";
+                ajaxGet("api/search.php",{search:this.value}).then((res)=>{
+                    res=JSON.parse(res);
+                    for(let i=0;i<res.length;i++) {
+                        str+=`
+                        <option >${res[i].name}</option>
+                        `
+                    }
+                    console.log(str)
+                    that.searchList.innerHTML=str;
+                });
+                
+            }
+            
+        // }
+
     }
     count() {
         this.shopcar=getCookie("shopcar");

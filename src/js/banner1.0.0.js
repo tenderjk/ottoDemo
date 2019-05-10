@@ -92,7 +92,7 @@
                     timer=null;
                     return function() {
                         clearInterval(timer);
-                        timer=setTimeout(()=>{obj.auto();console.log(2)},500);
+                        timer=setTimeout(()=>{obj.auto();},500);
                     }
                 ;
             })());

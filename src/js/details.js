@@ -18,13 +18,12 @@ require(["jquery","ajax","scar","init"],function($,_,car,init) {
     //模块加载完成后执行
     $("#input_header").load("model.html #sametop",(response,status,xhr)=>{
         if(status=="success") {
-            $("#input_footer").load("model.html #samefooter",(response,status,xhr)=>{
-                if(status=="success") {
-                    new init.ShowUnserInfo();
-                }
-            });
+            new init.ShowUnserInfo();
+            
         }
     });
+    
+    $("#input_footer").load("model.html #samefooter");
 
     let returnContain=document.querySelector(".return");
     let returnBtn =document.querySelector(".return button");
@@ -79,13 +78,27 @@ require(["jquery","ajax","scar","init"],function($,_,car,init) {
                         <p>${res[0].name}</p>
                     </div>
                 `
+                let smallImg=document.querySelector(".main-l .oriImg img");
+                let bigImg=document.querySelector(".main-l .big");
+                smallImg.onload=function() {
+                    let scale=smallImg.offsetWidth/smallImg.naturalWidth;
+                    let orismallImgHeihgt=smallImg.offsetHeight;
+                    smallImg.style.height=smallImg.naturalHeight*scale+"px";
+                    let scale2=smallImg.offsetHeight/orismallImgHeihgt;
+                    bigImg.style.height=bigImg.offsetHeight*scale2+"px";
+                    // span.style.height=span.offsetHeight*scale+"px";
+                    // bigContain.style.height=bigContain.offsetHeight*scale+"px";
+                    let loupe=new Loupe();
+                    loupe.bindEve();
+                }
+                
                 let mainRight=main.querySelector(".main-r");   
                 let str="";
                 if(res[0].oriPrice!=0) {
                     str=`
                         <li class="sale">
                             <s>${res[0].oriPrice}</s>
-                            <span>${(res[0].price/res[0].oriPrice*100).toFixed(0)}%</span>
+                            <span>${-(100-res[0].price/res[0].oriPrice*100).toFixed(0)}%</span>
                         </li>
                     `
                 }
@@ -111,8 +124,7 @@ require(["jquery","ajax","scar","init"],function($,_,car,init) {
                 </li>
             </ul>
                 `
-                let loupe=new Loupe();
-                loupe.bindEve();
+                
                 let addcar=new Addchar();
                 addcar.bindEve();
             }

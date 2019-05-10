@@ -22,13 +22,12 @@ require(["jquery","ajax","scar","init"],function($,_,shopcar,init) {
     //模块加载完成后执行
     $("#input_header").load("model.html #sametop",(response,status,xhr)=>{
         if(status=="success") {
-            $("#input_footer").load("model.html #samefooter",(response,status,xhr)=>{
-                if(status=="success") {
-                    window.showuser= new init.ShowUnserInfo();
-                }
-            });
+            new init.ShowUnserInfo();
+            
         }
     });
+    
+    $("#input_footer").load("model.html #samefooter");
 
     ajaxGet("api/goods.php",{all:"all"}).then((res)=>{
         res=JSON.parse(res);
