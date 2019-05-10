@@ -41,16 +41,68 @@ require(["jquery", "ajax", "init", "banner", "move"], function ($, _, init, bann
 		nav.init(res);
 		let navtab = new IndexNavTab();
 		navtab.bind();
+	});
+
+	ajaxGet("api/fashion.json").then((res) => {
+		res = JSON.parse(res);
+		let str = "";
+		res.forEach((v) => {
+			str += `
+			<li>
+				<a href="">
+					<div class="out-box">
+						<div class="inner-box">
+							<img src="${v.url}">
+						</div>
+					</div>
+					<p>${v.title}</p> 
+				</a>
+			</li>
+			`
+		});
+
+		let fashionContain = document.querySelector("#fashion ul");
+		fashionContain.innerHTML=str;
+		let fashionleft = document.querySelector("#fashion .btn #fashion-left-btn");
+		let fashionright = document.querySelector("#fashion .btn #fashion-right-btn");
+		let fashionSlide = new Slide(fashionContain, fashionleft, fashionright);
+		fashionSlide.init();
+
+	});
+
+	ajaxGet("api/home.json").then((res) => {
+		res = JSON.parse(res);
+		let str="";
+		res.forEach((v)=>{
+			str+=`
+			<li>
+				<a href="">
+					<div class="out-box">
+						<div class="inner-box">
+							<img src="${v.url}">
+						</div>
+					</div>
+					<p>${v.title}</p>
+				</a>
+			</li>
+			`
+		});
+		let familHomeContain = document.querySelector("#family-home ul");
+		familHomeContain.innerHTML=str;
+		let familHomeleft = document.querySelector("#family-home .btn #family-left-btn");
+		let familHomeright = document.querySelector("#family-home .btn #family-right-btn");
+		let familHomeSlide = new Slide(familHomeContain, familHomeleft, familHomeright);
+		familHomeSlide.init();
 	})
 
 	ajaxGet("api/banner.json").then((res) => {
 		res = JSON.parse(res);
-		let str="";
-		for(let i=0;i<res.length;i++) {
-			str+=`<a><img src="${res[i].url}"></a>`
+		let str = "";
+		for (let i = 0; i < res.length; i++) {
+			str += `<a><img src="${res[i].url}"></a>`
 		}
-		let imgbox=document.querySelector(".imgbox");
-		imgbox.innerHTML=str;
+		let imgbox = document.querySelector(".imgbox");
+		imgbox.innerHTML = str;
 		$("#banner").banner({
 			width: "6.04",
 			items: $("#banner").find("a"),
@@ -93,12 +145,12 @@ require(["jquery", "ajax", "init", "banner", "move"], function ($, _, init, bann
 
 	});
 
-	ajaxGet("api/activity.json").then((res)=>{
-		res=JSON.parse(res);
-		let activityContain=document.querySelector("#activity ul");
-		let str="";
-		for(let i=0;i<res.length;i++) {
-			str+=`
+	ajaxGet("api/activity.json").then((res) => {
+		res = JSON.parse(res);
+		let activityContain = document.querySelector("#activity ul");
+		let str = "";
+		for (let i = 0; i < res.length; i++) {
+			str += `
 			<li>
 				<a href=""><img src="${res[i].url}">
 					<h4>${res[i].title}</h4>
@@ -107,7 +159,7 @@ require(["jquery", "ajax", "init", "banner", "move"], function ($, _, init, bann
 			</li>
 			`
 		}
-		activityContain.innerHTML=str;
+		activityContain.innerHTML = str;
 
 	});
 
@@ -224,6 +276,8 @@ require(["jquery", "ajax", "init", "banner", "move"], function ($, _, init, bann
 	// }
 	// let showinfo=new ShowUnserInfo();
 	// showinfo.init();
+
+	// 三级导航显示
 	class IndexNavTab {
 		constructor() {
 			this.leftSubnavList = document.querySelectorAll(".subnav-l ul li");
@@ -317,7 +371,7 @@ require(["jquery", "ajax", "init", "banner", "move"], function ($, _, init, bann
 								that.index++;
 							}
 						}
-						console.log(that.index)
+						// console.log(that.index)
 					}, 300)
 				}
 			})();
@@ -351,7 +405,7 @@ require(["jquery", "ajax", "init", "banner", "move"], function ($, _, init, bann
 							that.prevFlag = false;
 							that.left.style.visibility = "hidden";
 						}
-						console.log(that.index)
+						// console.log(that.index)
 					}, 300)
 				}
 			})();
@@ -362,17 +416,9 @@ require(["jquery", "ajax", "init", "banner", "move"], function ($, _, init, bann
 	}
 
 
-	let familHomeContain = document.querySelector("#family-home ul");
-	let familHomeleft = document.querySelector("#family-home .btn #family-left-btn");
-	let familHomeright = document.querySelector("#family-home .btn #family-right-btn");
-	let familHomeSlide = new Slide(familHomeContain, familHomeleft, familHomeright);
-	familHomeSlide.init();
+	
 
-	let fashionContain = document.querySelector("#fashion ul");
-	let fashionleft = document.querySelector("#fashion .btn #fashion-left-btn");
-	let fashionright = document.querySelector("#fashion .btn #fashion-right-btn");
-	let fashionSlide = new Slide(fashionContain, fashionleft, fashionright);
-	fashionSlide.init();
+	
 
 
 })
