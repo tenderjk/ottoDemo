@@ -41,6 +41,7 @@ require(["jquery","ajax","scar","init"],function($,_,shopcar,init) {
             this.sc=new shopcar.car();
             this.allPrice=document.getElementById("allprice");
             this.shopcarList=document.querySelector("#shopcar-list dl");
+            this.carnum=document.querySelector(".carnum");
             this.data=[];
         }
         init(res) {
@@ -94,12 +95,13 @@ require(["jquery","ajax","scar","init"],function($,_,shopcar,init) {
                     let index=that.findData(id);
                     that.data.splice(index,1);
                     that.count();
-                    showuser.count();
+                    that.carnum.innerHTML= that.sc.count();
                     if(that.data.length==0) {
                         that.shopcarList.innerHTML=`
                         <dt class="nothing">
                             <h4>未挑选商品，<a href="datalist.html">去看看?</a></h4>
-                        </dt>`
+                        </dt>`;
+                        that.carnum.style.visibility="hidden";
                     }
                 }
 
@@ -113,7 +115,7 @@ require(["jquery","ajax","scar","init"],function($,_,shopcar,init) {
                     let index=that.findData(id);
                     that.data[index].num=this.value;
                     that.count();
-                    showuser.count();
+                    that.carnum.innerHTML= that.sc.count();
                 }
             }
         }
